@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Inline editor</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .clock {
+        font-family: lato, sans-serif;
+        text-shadow: 2px 2px 0 white;
+      }
+    </style>
+  </head>
+
+  <body class="h-screen">
+    <div id="app" class="h-screen">
+      <div
+        class="
+          clock
+          text-6xl text-black
+          flex
+          h-screen
+          justify-center
+          items-center
+        "
+        :style="{ 'background-color': backgroundColor }"
+      >
+        <span class="hours">{{displayhours}}</span>:<span class="minutes"
+          >{{displayminutes}}</span
+        >:<span class="seconds">{{displayseconds}}</span>
+      </div>
+    </div>
+  </body>
+</html>
